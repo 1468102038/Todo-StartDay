@@ -1,0 +1,132 @@
+{
+  "todos": [
+    {
+      "id": "mv68r03znsyrh",
+      "title": "测试平台",
+      "category": "work",
+      "priority": "urgent",
+      "completed": false,
+      "date": "2026-10-13",
+      "endDate": "2026-10-31",
+      "showOnCalendar": true,
+      "desc": "测试本平台",
+      "createdAt": "2026-10-13T05:29:16.367Z"
+    }
+  ],
+  "contests": [],
+  "categories": [
+    {
+      "id": "study",
+      "name": "学习",
+      "color": "#2d7d6e"
+    },
+    {
+      "id": "work",
+      "name": "工作",
+      "color": "#3b5998"
+    },
+    {
+      "id": "contest",
+      "name": "竞赛",
+      "color": "#b04050"
+    },
+    {
+      "id": "life",
+      "name": "生活",
+      "color": "#b07000"
+    }
+  ],
+  "priorities": [
+    {
+      "id": "urgent",
+      "name": "紧急",
+      "color": "#c5453d",
+      "level": 4
+    },
+    {
+      "id": "high",
+      "name": "高",
+      "color": "#e67e22",
+      "level": 3
+    },
+    {
+      "id": "medium",
+      "name": "中",
+      "color": "#f1c40f",
+      "level": 2
+    },
+    {
+      "id": "low",
+      "name": "低",
+      "color": "#27ae60",
+      "level": 1
+    }
+  ],
+  "contestCategories": [
+    {
+      "id": "algorithm",
+      "name": "算法",
+      "color": "#2d7d6e"
+    },
+    {
+      "id": "math",
+      "name": "数学",
+      "color": "#3b5998"
+    },
+    {
+      "id": "programming",
+      "name": "编程",
+      "color": "#b04050"
+    },
+    {
+      "id": "other",
+      "name": "其他",
+      "color": "#b07000"
+    }
+  ],
+  "announcements": [
+    {
+      "id": "mv6940924neue",
+      "title": "【平台测试】",
+      "content": "· 有问题的写到建议中，我再一个个针对性迭代\n",
+      "author": "来去自由",
+      "pinned": true,
+      "createdAt": "2026-10-13T05:39:23.078Z",
+      "updatedAt": "2026-10-13T05:39:23.078Z"
+    }
+  ],
+  "resources": [],
+  "resourceCategories": [
+    {
+      "id": "algo",
+      "name": "算法",
+      "color": "#2d7d6e"
+    },
+    {
+      "id": "math",
+      "name": "数学",
+      "color": "#3b5998"
+    },
+    {
+      "id": "prog",
+      "name": "编程",
+      "color": "#b04050"
+    },
+    {
+      "id": "ebook",
+      "name": "电子书",
+      "color": "#b07000"
+    },
+    {
+      "id": "video",
+      "name": "视频教程",
+      "color": "#7c5cbf"
+    },
+    {
+      "id": "other",
+      "name": "其他",
+      "color": "#6e7681"
+    }
+  ],
+  "suggestions": []
+}

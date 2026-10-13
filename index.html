@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="theme-white">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- CSP: script-src 'self' 阻止内联脚本（主要 XSS 向量）。
+       style-src 'unsafe-inline' 是必要的：应用使用 300+ 处内联样式做布局。
+       样式注入无法执行 JS，风险远低于脚本注入。 -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https:; connect-src 'self' https://raw.githubusercontent.com https://api.github.com;" />
+  <title>StartDay</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📄</text></svg>" />
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
