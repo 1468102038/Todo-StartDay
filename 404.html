@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 — StartDay</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📄</text></svg>" />
+  <style>
+    /* ===== Reset & Base ===== */
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background-color: #f1f1f1;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+      color: #1f2328;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* ===== Main Content ===== */
+    .main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    /* 404 大标题 */
+    .error-code {
+      font-size: 56px;
+      font-weight: 700;
+      color: #000;
+      line-height: 1.2;
+      margin-bottom: 24px;
+    }
+
+    /* 主消息 */
+    .error-message {
+      font-size: 16px;
+      color: #1f2328;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+
+    /* 说明文字 */
+    .error-description {
+      font-size: 14px;
+      color: #57606a;
+      text-align: center;
+      max-width: 560px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    /* 链接 */
+    a {
+      color: #4183c4;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* GitHub Status 行 */
+    .status-line {
+      font-size: 14px;
+      color: #57606a;
+      margin-top: 8px;
+    }
+
+    .status-line a {
+      margin-right: 4px;
+    }
+
+    /* ===== Footer ===== */
+    .footer {
+      border-top: 1px solid #3c3c3c;
+      background-color: #000;
+      color: #9da5b3;
+      font-size: 12px;
+      padding: 12px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .footer-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .footer-left a {
+      color: #6dbbea;
+      font-size: 12px;
+    }
+
+    /* 绿色状态圆点 */
+    .status-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #1ac785;
+      margin-right: 4px;
+      vertical-align: middle;
+    }
+
+    .footer-right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .footer-right a {
+      color: #9da5b3;
+      font-size: 12px;
+    }
+
+    .footer-right a:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* ===== 响应式 ===== */
+    @media (max-width: 600px) {
+      .error-code {
+        font-size: 42px;
+      }
+      .error-description {
+        font-size: 13px;
+      }
+      .footer {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="main">
+    <div class="error-code">404</div>
+    <p class="error-message">There isn't a GitHub Pages site here.</p>
+    <p class="error-description">
+      If you're trying to publish one, read the
+      <a href="https://docs.github.com/pages" target="_blank" rel="noopener">full documentation</a>
+      to learn how to set up GitHub Pages for your repository, organization, or user account.
+    </p>
+    <div class="status-line">
+      <a href="https://www.githubstatus.com" target="_blank" rel="noopener">GitHub Status</a>
+      —
+      <a href="https://twitter.com/githubstatus" target="_blank" rel="noopener">@githubstatus</a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-left">
+      <a href="https://www.githubstatus.com" target="_blank" rel="noopener">https://githubstatus.com</a>
+    </div>
+    <div class="footer-right">
+      <span><span class="status-dot"></span>All systems operational</span>
+      <a href="https://docs.github.com" target="_blank" rel="noopener">Docs</a>
+      <a href="https://github.com/contact" target="_blank" rel="noopener">Contact</a>
+      <a href="https://github.com" target="_blank" rel="noopener">© GitHub</a>
+    </div>
+  </footer>
+</body>
+</html>
