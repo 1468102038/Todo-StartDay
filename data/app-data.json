@@ -128,5 +128,14 @@
       "color": "#6e7681"
     }
   ],
-  "suggestions": []
+  "suggestions": [
+    {
+      "id": "4e00c5ff-da1c-4435-909f-afe3f5722c0c",
+      "title": "功能添加",
+      "content": "然后就是，后面还是加一个功能吧。让他们能看到公开的公告和比赛就行了。todolist这个就不公开给他们",
+      "author": "来去自由",
+      "createdAt": "2026-10-15T12:16:32.101Z",
+      "comments": []
+    }
+  ]
 }
