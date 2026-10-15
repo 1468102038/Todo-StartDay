@@ -1,18 +1,314 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="theme-white">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- CSP: script-src 'self' 阻止内联脚本（主要 XSS 向量）。
-       style-src 'unsafe-inline' 是必要的：应用使用 300+ 处内联样式做布局。
-       样式注入无法执行 JS，风险远低于脚本注入。 -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https:; connect-src 'self' https://raw.githubusercontent.com https://api.github.com;" />
-  <title>StartDay</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📄</text></svg>" />
-  <script type="module" crossorigin src="/Todo-StartDay/assets/index-3SYZtf-W.js"></script>
-  <link rel="stylesheet" crossorigin href="/Todo-StartDay/assets/index-B-vD-SrE.css">
+  <title>Page not found · GitHub</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='%23f0f6fc' d='M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z'/></svg>" />
+  <style>
+    /* ===== Reset ===== */
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background-color: #f1f1f1;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+      color: #1f2328;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    a {
+      color: #4183c4;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== GitHub Header ===== */
+    .gh-header {
+      background-color: #1f2328;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .gh-logo {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      flex-shrink: 0;
+    }
+
+    .gh-logo svg {
+      width: 32px;
+      height: 32px;
+      fill: #f0f6fc;
+    }
+
+    .gh-search {
+      flex: 1;
+      max-width: 280px;
+      background-color: #0d1117;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      padding: 5px 12px;
+      color: #8b949e;
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .gh-search .slash {
+      margin-left: auto;
+      background-color: #30363d;
+      border-radius: 3px;
+      padding: 0 6px;
+      font-size: 11px;
+      color: #8b949e;
+    }
+
+    .gh-nav {
+      display: flex;
+      gap: 16px;
+      font-size: 14px;
+    }
+
+    .gh-nav a {
+      color: #f0f6fc;
+      font-size: 14px;
+    }
+    .gh-nav a:hover {
+      color: #8b949e;
+      text-decoration: none;
+    }
+
+    .gh-header-right {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .gh-icon-btn {
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+    }
+    .gh-icon-btn:hover {
+      background-color: #30363d;
+    }
+    .gh-icon-btn svg {
+      width: 16px;
+      height: 16px;
+      fill: #8b949e;
+    }
+
+    .gh-avatar {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #f78166, #f0f6fc);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      color: #1f2328;
+      font-weight: 600;
+    }
+
+    /* ===== Main Content ===== */
+    .main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .error-code {
+      font-size: 56px;
+      font-weight: 700;
+      color: #000;
+      line-height: 1.2;
+      margin-bottom: 24px;
+    }
+
+    .error-message {
+      font-size: 16px;
+      color: #1f2328;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+
+    .error-description {
+      font-size: 14px;
+      color: #57606a;
+      text-align: center;
+      max-width: 560px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .status-line {
+      font-size: 14px;
+      color: #57606a;
+      margin-top: 8px;
+    }
+    .status-line a {
+      margin-right: 4px;
+    }
+
+    /* ===== Footer ===== */
+    .footer {
+      border-top: 1px solid #3c3c3c;
+      background-color: #000;
+      color: #9da5b3;
+      font-size: 12px;
+      padding: 12px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .footer-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .footer-left a {
+      color: #6dbbea;
+      font-size: 12px;
+    }
+
+    .status-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #1ac785;
+      margin-right: 4px;
+      vertical-align: middle;
+    }
+
+    .footer-right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .footer-right a {
+      color: #9da5b3;
+      font-size: 12px;
+    }
+    .footer-right a:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* GitHub logo in footer */
+    .footer-logo {
+      width: 20px;
+      height: 20px;
+    }
+    .footer-logo svg {
+      width: 20px;
+      height: 20px;
+      fill: #9da5b3;
+    }
+
+    /* ===== 响应式 ===== */
+    @media (max-width: 768px) {
+      .gh-search { display: none; }
+      .gh-nav { display: none; }
+    }
+    @media (max-width: 600px) {
+      .error-code { font-size: 42px; }
+      .error-description { font-size: 13px; }
+      .footer { flex-direction: column; align-items: flex-start; }
+      .gh-header-right { gap: 8px; }
+    }
+  </style>
 </head>
 <body>
-  <div id="root"></div>
+  <!-- GitHub Header Bar -->
+  <header class="gh-header">
+    <!-- Octocat Logo -->
+    <a href="https://github.com" class="gh-logo" aria-label="GitHub">
+      <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+      </svg>
+    </a>
+    <!-- Search bar -->
+    <div class="gh-search">
+      <span>Type / to search</span>
+      <span class="slash">/</span>
+    </div>
+    <!-- Nav links -->
+    <nav class="gh-nav">
+      <a href="https://github.com/pulls">Pull requests</a>
+      <a href="https://github.com/issues">Issues</a>
+      <a href="https://github.com/marketplace">Marketplace</a>
+      <a href="https://github.com/explore">Explore</a>
+    </nav>
+    <!-- Right side -->
+    <div class="gh-header-right">
+      <a href="https://github.com/notifications" class="gh-icon-btn" aria-label="Notifications">
+        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.696.696A.75.75 0 0 1 6 2.25v-.5C6 .784 6.784 0 7.75 0h.5C9.216 0 10 .784 10 1.75v.5a.75.75 0 0 1-1.304.514L8 1.918zM3 6a5 5 0 0 1 10 0v2.5a2.75 2.75 0 0 0 .5 1.6l.9 1.2a.75.75 0 0 1-.6 1.2H2.2a.75.75 0 0 1-.6-1.2l.9-1.2A2.75 2.75 0 0 0 3 8.5V6z"/></svg>
+      </a>
+      <a href="https://github.com/new" class="gh-icon-btn" aria-label="New">
+        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M7.75 2a.75.75 0 0 1 .75.75V7h4.25a.75.75 0 0 1 0 1.5H8.5v4.25a.75.75 0 0 1-1.5 0V8.5H2.75a.75.75 0 0 1 0-1.5H7V2.75A.75.75 0 0 1 7.75 2z"/></svg>
+      </a>
+      <div class="gh-avatar">1</div>
+    </div>
+  </header>
+
+  <!-- Main 404 Content -->
+  <main class="main">
+    <div class="error-code">404</div>
+    <p class="error-message">There isn't a GitHub Pages site here.</p>
+    <p class="error-description">
+      If you're trying to publish one, read the
+      <a href="https://docs.github.com/pages" target="_blank" rel="noopener">full documentation</a>
+      to learn how to set up GitHub Pages for your repository, organization, or user account.
+    </p>
+    <div class="status-line">
+      <a href="https://www.githubstatus.com" target="_blank" rel="noopener">GitHub Status</a>
+      —
+      <a href="https://twitter.com/githubstatus" target="_blank" rel="noopener">@githubstatus</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-left">
+      <span class="footer-logo">
+        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+      </span>
+      <a href="https://www.githubstatus.com" target="_blank" rel="noopener">https://githubstatus.com</a>
+    </div>
+    <div class="footer-right">
+      <span><span class="status-dot"></span>All systems operational</span>
+      <a href="https://docs.github.com" target="_blank" rel="noopener">Docs</a>
+      <a href="https://github.com/contact" target="_blank" rel="noopener">Contact</a>
+      <a href="https://github.com" target="_blank" rel="noopener">© GitHub</a>
+    </div>
+  </footer>
 </body>
 </html>
