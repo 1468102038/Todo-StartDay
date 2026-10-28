@@ -1,18 +1,5 @@
 {
-  "todos": [
-    {
-      "id": "mv68r03znsyrh",
-      "title": "测试平台",
-      "category": "work",
-      "priority": "urgent",
-      "completed": false,
-      "date": "2026-10-13",
-      "endDate": "2026-10-31",
-      "showOnCalendar": true,
-      "desc": "测试本平台",
-      "createdAt": "2026-10-13T05:29:16.367Z"
-    }
-  ],
+  "todos": [],
   "contests": [],
   "categories": [
     {
