@@ -84,17 +84,7 @@
       "color": "#b07000"
     }
   ],
-  "announcements": [
-    {
-      "id": "mv6940924neue",
-      "title": "【平台测试】",
-      "content": "· 有问题的写到建议中，我再一个个针对性迭代\n",
-      "author": "来去自由",
-      "pinned": true,
-      "createdAt": "2026-10-13T05:39:23.078Z",
-      "updatedAt": "2026-10-13T05:39:23.078Z"
-    }
-  ],
+  "announcements": [],
   "resources": [],
   "resourceCategories": [
     {
